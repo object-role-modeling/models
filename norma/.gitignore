@@ -1,0 +1,5 @@
+Models.suo
+*.user
+bin
+obj
+*._ORMCustomToolReport.cs
