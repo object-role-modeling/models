@@ -175,11 +175,12 @@
 				</orm:PlayedRoles>
 				<orm:ConceptualDataType id="_1ACBAF96-DC08-4899-950F-92FF5B2BED16" ref="_EBC66B83-6120-48D4-B685-70F48CBEA0FD" Scale="0" Length="0" />
 			</orm:ValueType>
-			<orm:EntityType id="_C1E0CC38-6626-4186-9A45-963EFF58A695" Name="Literal" _ReferenceMode="">
+			<orm:ValueType id="_C1E0CC38-6626-4186-9A45-963EFF58A695" Name="Literal">
 				<orm:PlayedRoles>
 					<orm:Role ref="_E7718D90-D7E8-42B1-9A72-BED5DCA6AC41" />
 				</orm:PlayedRoles>
-			</orm:EntityType>
+				<orm:ConceptualDataType id="_70E29725-A559-4729-BC2B-E7F9DC59690E" ref="_CDAC43B0-447F-476A-A47A-0BB8BDA3E6FE" Scale="0" Length="0" />
+			</orm:ValueType>
 			<orm:EntityType id="_37064468-A238-47A4-B031-FF78735278CC" Name="PhysicalTable" _ReferenceMode="">
 				<orm:PlayedRoles>
 					<orm:SubtypeMetaRole ref="_1931CC39-F1FE-475F-AA89-21F3628EBB35" />
@@ -2246,11 +2247,6 @@
 			<orm:UnsignedIntegerNumericDataType id="_91015E10-4370-42D7-88F1-32E03F96B195" />
 			<orm:AutoCounterNumericDataType id="_EBC66B83-6120-48D4-B685-70F48CBEA0FD" />
 		</orm:DataTypes>
-		<orm:ModelErrors>
-			<orm:EntityTypeRequiresReferenceSchemeError id="_D239CF4E-3AF9-4DB1-B0E1-1D7C27635985" Name="Entity type 'Literal' in model 'CCF Query Builder' requires a local preferred reference scheme or supertype(s) that provide preferred identification.">
-				<orm:EntityType ref="_C1E0CC38-6626-4186-9A45-963EFF58A695" />
-			</orm:EntityTypeRequiresReferenceSchemeError>
-		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_E8D851A4-45EA-4271-984F-5701C1B830E3" FormatString="{1}" ReferenceModeType="General" />
 			<orm:ReferenceModeKind id="_AC3AF1CB-AC93-4317-8990-DCCC0DEDDA2C" FormatString="{0}_{1}" ReferenceModeType="Popular" />

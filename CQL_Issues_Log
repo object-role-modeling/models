@@ -1,0 +1,58 @@
+The CQL in this project was generated blindly from the ORM files
+after they had received the tweaks below. It is not guaranteed
+not even particularly likely to compile, but may not be far off.
+Not all the ORM files are free of errors either.
+
+The generation script (using the Ruby activefacts gem) was:
+
+for i in orm/*.orm
+do
+	echo === $i
+	afgen --cql "$i" > "cql/`basename "$i" .orm`.cql"
+done
+
+orm/CCF Query Builder.orm
+* Changed Literal to be a ValueType, since it had no identification
+
+orm/Food.orm
+* Masking reserved word 'no' in reading '{0} has no units'
+* Re-worded to MeasurementUnit is unitless
+
+orm/Genealogy.orm
+* Re-instated the Person role player for PersonPassesThroughLifeStageInOrder
+* Deleted incomplete populations
+
+orm/HL7 Clinical Statement Pattern.orm
+* Needs identifying patterns for ClinicalStatement and "ProviderOrPatientOrRelated"
+
+orm/LexicalMatcher.orm
+* Added Term_id
+
+orm/MIAME schema from Chris Stoeckert.orm
+* Made spanning uniqueness constraints preferred identifiers
+* Many entity types missing identifiers
+
+orm/Microarray.orm
+* Made spanning uniqueness constraints preferred identifiers
+* One entity type missing an identifiers
+
+orm/OData.orm
+* Added QueryOption attributes and identifier
+* Needs URL identifier (badly modelled!)
+
+orm/RentalPrices.orm
+* Added identifier for NavigationBar
+* Badly named; includes both rental prices and scraper data. Suggest RentalPriceScraper?
+
+orm/Talent.orm
+* Renamed role name 'agent' to Agent to avoid clash with reading '{0} is agent of {1}'
+
+orm/WebServiceDefinition.orm
+Uniqueness constraint ExternalUniquenessConstraint1 has incompatible players ["Namespace", "Name"]
+
+orm/WebTickets.orm
+* renamed post hyphen-bound '-1', '-2', '-3' to suit CQL
+Deleted ExclusiveOrConstraint1/InclusiveOrConstraint1 because it has only one role
+
+orm/calendar.orm
+* Masked object type name 'date' in reading '{0} is by date'. Is an alternate reading feasible?
