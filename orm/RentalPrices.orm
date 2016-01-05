@@ -34,6 +34,33 @@
 					<orm:Role ref="_4F296281-168F-40F7-AE6E-D7EA9620C0F6" />
 				</orm:PlayedRoles>
 				<orm:PreferredIdentifier ref="_C28DD092-CC53-4AAE-A53C-859E719BA035" />
+				<orm:Instances>
+					<orm:EntityTypeInstance id="_B64DA1BE-21ED-49C0-B0E6-7F3605A9F645">
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance ref="_EC9D1614-9AB6-454F-B889-7C998F6FADD8" />
+						</orm:RoleInstances>
+					</orm:EntityTypeInstance>
+					<orm:EntityTypeInstance id="_0A31F7E1-96EF-479E-93C0-DF339A002724">
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance ref="_FA409DE1-A91D-4D8A-BB44-A8BAF2B5129E" />
+						</orm:RoleInstances>
+					</orm:EntityTypeInstance>
+					<orm:EntityTypeInstance id="_484432C3-4234-4939-8771-BB63862F5FEC">
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance ref="_281FA171-50A4-4EFE-83B3-D399C9F916A7" />
+						</orm:RoleInstances>
+					</orm:EntityTypeInstance>
+					<orm:EntityTypeInstance id="_FDF5C25A-E628-4E46-9F9B-B5ACD5CD215A">
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance ref="_F4BD6A5F-C185-4FD0-AEF4-AC1BD4332152" />
+						</orm:RoleInstances>
+					</orm:EntityTypeInstance>
+					<orm:EntityTypeInstance id="_38A0D6BB-5229-4683-8035-BEDFD29A31EB">
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance ref="_5327073C-5F80-4309-A8FA-26E59094A050" />
+						</orm:RoleInstances>
+					</orm:EntityTypeInstance>
+				</orm:Instances>
 			</orm:EntityType>
 			<orm:EntityType id="_E93FEE17-5D4F-41D0-82B2-25CCEC792001" Name="State" _ReferenceMode="code">
 				<orm:PlayedRoles>
@@ -45,41 +72,6 @@
 					<orm:EntityTypeInstance id="_CB523427-1E32-4B32-99B2-70608E185250">
 						<orm:RoleInstances>
 							<orm:EntityTypeRoleInstance ref="_609F99BA-FF33-4FAC-AD38-A85732CF06BF" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_7F8FC0E7-FA58-432F-B325-8C5058A8B34E">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_05646F48-929C-4CDE-A4BF-161CA0CFDF3D" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_7F471A32-A32C-4206-9076-BBE9873281B1">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_77423A3C-05CF-49E6-8136-ECD3E2CDEB7A" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_66F32F7F-506D-488B-AF0C-97CC6A399950">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_4B6A3D36-6F50-4970-B630-4B3FB5CEC9FC" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_75E1EF19-1BB2-4B44-A3CD-9F1DEE4DED9C">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_CDE67083-593C-4010-AFE5-05382741C648" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_F82CEFBC-6DC2-405D-BE59-8A12E5D7F4C3">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_2E8F7854-4FEF-467C-900F-D1031D0235BA" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_3DF1E09A-F838-4C6C-8ACF-1BF4A10EAB24">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_F12EC5E3-5391-4910-BA6B-4D3801EF5F42" />
-						</orm:RoleInstances>
-					</orm:EntityTypeInstance>
-					<orm:EntityTypeInstance id="_27F3828E-2500-4737-AA19-D23BDEAC889D">
-						<orm:RoleInstances>
-							<orm:EntityTypeRoleInstance ref="_D853A167-32F9-4477-AF75-9143BDF914E4" />
 						</orm:RoleInstances>
 					</orm:EntityTypeInstance>
 				</orm:Instances>
@@ -238,27 +230,6 @@
 					<orm:ValueTypeInstance id="_460CDE90-B3A9-4FF6-A31C-1400D3D174D1">
 						<orm:Value>UT</orm:Value>
 					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_03C12063-8D05-4AC2-8ABD-07139271FB98">
-						<orm:Value>CO</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_458BCB7B-F47D-44F5-8159-4400DD75B5E5">
-						<orm:Value>WY</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_9ECBC592-35AC-4AA0-8967-38C651C1C4F4">
-						<orm:Value>ID</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_C0C8CC88-D071-447F-82AC-68B1D503B9B5">
-						<orm:Value>NV</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_986DFF0D-134E-4D2A-8B1F-BBE8DDA6B404">
-						<orm:Value>CA</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_0BE1331F-76EB-4E09-B561-DCF3D98B1654">
-						<orm:Value>WA</orm:Value>
-					</orm:ValueTypeInstance>
-					<orm:ValueTypeInstance id="_A9415FF5-94BA-4558-A2F0-A3D746FCACB8">
-						<orm:Value>OR</orm:Value>
-					</orm:ValueTypeInstance>
 				</orm:Instances>
 			</orm:ValueType>
 			<orm:ValueType id="_B8E76F06-BD95-4695-AFB5-C72397A3B261" Name="City_id">
@@ -266,6 +237,28 @@
 					<orm:Role ref="_AAC22D4E-DF70-4EC9-A7E7-53FCE10A7AB2" />
 				</orm:PlayedRoles>
 				<orm:ConceptualDataType id="_CAC7752D-9866-48FC-94E6-E161300D6D52" ref="_956089BD-B4CF-47F7-ABA4-D51D2C74DC3F" Scale="0" Length="0" />
+				<orm:Instances>
+					<orm:ValueTypeInstance id="_238BB018-A02C-4F80-B410-C737C5EDE8B8">
+						<orm:Value>1</orm:Value>
+						<orm:InvariantValue>1</orm:InvariantValue>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_41AB8EFF-8B98-4489-AB03-84B7E88399A0">
+						<orm:Value>2</orm:Value>
+						<orm:InvariantValue>2</orm:InvariantValue>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_65ED424C-314F-4779-AB14-3EE47E38331B">
+						<orm:Value>3</orm:Value>
+						<orm:InvariantValue>3</orm:InvariantValue>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_7A9F8930-9E90-40A0-98F6-45BCB50B6683">
+						<orm:Value>4</orm:Value>
+						<orm:InvariantValue>4</orm:InvariantValue>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_88C341EB-1397-40D4-8A73-E3C84820557D">
+						<orm:Value>5</orm:Value>
+						<orm:InvariantValue>5</orm:InvariantValue>
+					</orm:ValueTypeInstance>
+				</orm:Instances>
 			</orm:ValueType>
 			<orm:ObjectifiedType id="_E341D992-15E9-4EF4-87B5-D0BC66FE5F77" Name="Listing" _ReferenceMode="">
 				<orm:PlayedRoles>
@@ -551,13 +544,6 @@
 						<orm:RolePlayer ref="_625532CE-CA2C-423F-8BE1-30C0672A28C5" />
 						<orm:RoleInstances>
 							<orm:EntityTypeRoleInstance id="_609F99BA-FF33-4FAC-AD38-A85732CF06BF" ref="_460CDE90-B3A9-4FF6-A31C-1400D3D174D1" />
-							<orm:EntityTypeRoleInstance id="_05646F48-929C-4CDE-A4BF-161CA0CFDF3D" ref="_03C12063-8D05-4AC2-8ABD-07139271FB98" />
-							<orm:EntityTypeRoleInstance id="_77423A3C-05CF-49E6-8136-ECD3E2CDEB7A" ref="_458BCB7B-F47D-44F5-8159-4400DD75B5E5" />
-							<orm:EntityTypeRoleInstance id="_4B6A3D36-6F50-4970-B630-4B3FB5CEC9FC" ref="_9ECBC592-35AC-4AA0-8967-38C651C1C4F4" />
-							<orm:EntityTypeRoleInstance id="_CDE67083-593C-4010-AFE5-05382741C648" ref="_C0C8CC88-D071-447F-82AC-68B1D503B9B5" />
-							<orm:EntityTypeRoleInstance id="_2E8F7854-4FEF-467C-900F-D1031D0235BA" ref="_986DFF0D-134E-4D2A-8B1F-BBE8DDA6B404" />
-							<orm:EntityTypeRoleInstance id="_F12EC5E3-5391-4910-BA6B-4D3801EF5F42" ref="_0BE1331F-76EB-4E09-B561-DCF3D98B1654" />
-							<orm:EntityTypeRoleInstance id="_D853A167-32F9-4477-AF75-9143BDF914E4" ref="_A9415FF5-94BA-4558-A2F0-A3D746FCACB8" />
 						</orm:RoleInstances>
 					</orm:Role>
 				</orm:FactRoles>
@@ -686,13 +672,24 @@
 			</orm:Fact>
 			<orm:Fact id="_8617B55F-615B-48A8-A3F4-876E853B2168" _Name="CityHasCityName">
 				<orm:FactRoles>
-					<orm:Role id="_E72C41BF-583B-4622-9DBD-1C32C974EF36" _IsMandatory="false" _Multiplicity="ZeroToMany" Name="">
+					<orm:Role id="_E72C41BF-583B-4622-9DBD-1C32C974EF36" _IsMandatory="true" _Multiplicity="ZeroToMany" Name="">
 						<orm:RolePlayer ref="_E9252088-E295-4931-B271-AD146B5BBF56" />
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance id="_B745F606-BD7C-484E-A968-7A2C86A4FFEC" ref="_B64DA1BE-21ED-49C0-B0E6-7F3605A9F645" />
+							<orm:FactTypeRoleInstance id="_AEAC8450-A2FA-459F-BB50-07564C226A13" ref="_0A31F7E1-96EF-479E-93C0-DF339A002724" />
+							<orm:FactTypeRoleInstance id="_8357ABBC-0AE2-44BD-BE20-DC25A105E391" ref="_484432C3-4234-4939-8771-BB63862F5FEC" />
+							<orm:FactTypeRoleInstance id="_4E8E7A0B-15AC-469D-9EC2-A4AD6CC4C99E" ref="_FDF5C25A-E628-4E46-9F9B-B5ACD5CD215A" />
+							<orm:FactTypeRoleInstance id="_EE751869-AF86-46A8-B6D3-F2B3283F449F" ref="_38A0D6BB-5229-4683-8035-BEDFD29A31EB" />
+						</orm:RoleInstances>
 					</orm:Role>
-					<orm:Role id="_32A4BC78-2F80-4F8F-8A2E-A670F634B1E5" _IsMandatory="false" _Multiplicity="ZeroToOne" Name="">
+					<orm:Role id="_32A4BC78-2F80-4F8F-8A2E-A670F634B1E5" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
 						<orm:RolePlayer ref="_CD3B753F-0316-45E1-BB9C-13E62A7C9248" />
 						<orm:RoleInstances>
 							<orm:FactTypeRoleInstance id="_3CEB5362-7080-44B1-A8D8-AB1A510E5932" ref="_1A5DF385-784A-4623-A999-90DD55EE8614" />
+							<orm:FactTypeRoleInstance id="_D5C54733-3DFB-428E-AA15-996CD43110DB" ref="_4295AC79-95E0-41F3-B592-06162E1F0606" />
+							<orm:FactTypeRoleInstance id="_AACC5EDB-B831-4A3B-AB53-6232993FFB96" ref="_D3181A82-9530-4074-859C-BDBE50938E5F" />
+							<orm:FactTypeRoleInstance id="_F8475314-E003-474B-9E90-CF686A3EF659" ref="_D6C1192D-F063-4DAE-B556-76F128507215" />
+							<orm:FactTypeRoleInstance id="_7E0AEE76-9248-4068-BA67-335A1C481842" ref="_23AC11BC-273C-400B-8A6C-4E751BA41822" />
 						</orm:RoleInstances>
 					</orm:Role>
 				</orm:FactRoles>
@@ -714,22 +711,62 @@
 				</orm:ReadingOrders>
 				<orm:InternalConstraints>
 					<orm:UniquenessConstraint ref="_5D97E84F-1CF0-4A09-991E-D76AAC829C67" />
+					<orm:MandatoryConstraint ref="_1C5048C0-5703-43D5-8B61-BA95E9AECA19" />
 				</orm:InternalConstraints>
 				<orm:Instances>
 					<orm:FactTypeInstance id="_29D491FE-6B40-47AA-9139-91BC8EB39F3B">
 						<orm:RoleInstances>
 							<orm:FactTypeRoleInstance ref="_3CEB5362-7080-44B1-A8D8-AB1A510E5932" />
+							<orm:FactTypeRoleInstance ref="_B745F606-BD7C-484E-A968-7A2C86A4FFEC" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_F9EBB471-BD51-40D5-9541-8F654458E9A7">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_AEAC8450-A2FA-459F-BB50-07564C226A13" />
+							<orm:FactTypeRoleInstance ref="_D5C54733-3DFB-428E-AA15-996CD43110DB" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_A22CBB68-1934-4D75-A163-34522992D67B">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_8357ABBC-0AE2-44BD-BE20-DC25A105E391" />
+							<orm:FactTypeRoleInstance ref="_AACC5EDB-B831-4A3B-AB53-6232993FFB96" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_9E1924BB-A52E-4C74-A0A1-D1EB3920FF14">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_4E8E7A0B-15AC-469D-9EC2-A4AD6CC4C99E" />
+							<orm:FactTypeRoleInstance ref="_F8475314-E003-474B-9E90-CF686A3EF659" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_6777526F-23E2-49B0-BBA0-908522F3E6CA">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_EE751869-AF86-46A8-B6D3-F2B3283F449F" />
+							<orm:FactTypeRoleInstance ref="_7E0AEE76-9248-4068-BA67-335A1C481842" />
 						</orm:RoleInstances>
 					</orm:FactTypeInstance>
 				</orm:Instances>
 			</orm:Fact>
 			<orm:Fact id="_11357C8C-CA12-400A-A9A8-4160ECF98C23" _Name="CityIsInState">
 				<orm:FactRoles>
-					<orm:Role id="_CCBD4432-AC1E-49A8-94BF-B51D8812E651" _IsMandatory="false" _Multiplicity="ZeroToMany" Name="">
+					<orm:Role id="_CCBD4432-AC1E-49A8-94BF-B51D8812E651" _IsMandatory="true" _Multiplicity="ZeroToMany" Name="">
 						<orm:RolePlayer ref="_E9252088-E295-4931-B271-AD146B5BBF56" />
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance id="_9CAC4922-3456-4978-BEC0-902BF6352F7A" ref="_B64DA1BE-21ED-49C0-B0E6-7F3605A9F645" />
+							<orm:FactTypeRoleInstance id="_D57CB73A-1C9E-4ACE-B1FE-A0C6AB9445B5" ref="_0A31F7E1-96EF-479E-93C0-DF339A002724" />
+							<orm:FactTypeRoleInstance id="_38FFA082-B6B3-4701-9980-9FB4ED235FEF" ref="_484432C3-4234-4939-8771-BB63862F5FEC" />
+							<orm:FactTypeRoleInstance id="_8B7807C6-06DD-4BAA-BE6C-F367DA808CD2" ref="_FDF5C25A-E628-4E46-9F9B-B5ACD5CD215A" />
+							<orm:FactTypeRoleInstance id="_3CDD4135-2213-4FFD-958B-2ACCAC462FDB" ref="_38A0D6BB-5229-4683-8035-BEDFD29A31EB" />
+						</orm:RoleInstances>
 					</orm:Role>
-					<orm:Role id="_AD93366C-DBA6-4226-9109-8F6ED0BBE4FA" _IsMandatory="false" _Multiplicity="ZeroToOne" Name="">
+					<orm:Role id="_AD93366C-DBA6-4226-9109-8F6ED0BBE4FA" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
 						<orm:RolePlayer ref="_E93FEE17-5D4F-41D0-82B2-25CCEC792001" />
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance id="_A34D75CF-CF36-42E9-BA33-CA94748BD704" ref="_CB523427-1E32-4B32-99B2-70608E185250" />
+							<orm:FactTypeRoleInstance id="_9D79D92A-6624-4D85-8E42-E9BF75B6604F" ref="_CB523427-1E32-4B32-99B2-70608E185250" />
+							<orm:FactTypeRoleInstance id="_D862D0AF-B50E-4F0B-8305-693704EAAFBF" ref="_CB523427-1E32-4B32-99B2-70608E185250" />
+							<orm:FactTypeRoleInstance id="_DF437510-0F09-44C4-84DD-D6B5EF7DDA56" ref="_CB523427-1E32-4B32-99B2-70608E185250" />
+							<orm:FactTypeRoleInstance id="_F7D9362B-A94B-4F84-B21A-DFC9E22CD735" ref="_CB523427-1E32-4B32-99B2-70608E185250" />
+						</orm:RoleInstances>
 					</orm:Role>
 				</orm:FactRoles>
 				<orm:ReadingOrders>
@@ -750,7 +787,40 @@
 				</orm:ReadingOrders>
 				<orm:InternalConstraints>
 					<orm:UniquenessConstraint ref="_906D6AA2-4C36-47E3-ADAC-1E36338919F5" />
+					<orm:MandatoryConstraint ref="_AAED6C08-3ABB-4B78-A2F9-3BF558ACF094" />
 				</orm:InternalConstraints>
+				<orm:Instances>
+					<orm:FactTypeInstance id="_F9845115-89D2-4496-AC5D-35E31B6FD083">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_9CAC4922-3456-4978-BEC0-902BF6352F7A" />
+							<orm:FactTypeRoleInstance ref="_A34D75CF-CF36-42E9-BA33-CA94748BD704" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_9D35DE11-5098-4761-B89A-34F041F74460">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_D57CB73A-1C9E-4ACE-B1FE-A0C6AB9445B5" />
+							<orm:FactTypeRoleInstance ref="_9D79D92A-6624-4D85-8E42-E9BF75B6604F" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_C0272DD4-E641-4382-8E58-B9E395E74608">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_38FFA082-B6B3-4701-9980-9FB4ED235FEF" />
+							<orm:FactTypeRoleInstance ref="_D862D0AF-B50E-4F0B-8305-693704EAAFBF" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_14DC1D42-DBB2-4448-AEDC-E25C7F3110F9">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_8B7807C6-06DD-4BAA-BE6C-F367DA808CD2" />
+							<orm:FactTypeRoleInstance ref="_DF437510-0F09-44C4-84DD-D6B5EF7DDA56" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_DDD59B3C-DB47-4E9E-956F-420D3AE693C7">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_3CDD4135-2213-4FFD-958B-2ACCAC462FDB" />
+							<orm:FactTypeRoleInstance ref="_F7D9362B-A94B-4F84-B21A-DFC9E22CD735" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+				</orm:Instances>
 			</orm:Fact>
 			<orm:Fact id="_3B362981-AC32-46D3-A63E-979EFE1F1BC1" _Name="CityHasCityId">
 				<orm:FactRoles>
@@ -759,6 +829,13 @@
 					</orm:Role>
 					<orm:Role id="_AAC22D4E-DF70-4EC9-A7E7-53FCE10A7AB2" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
 						<orm:RolePlayer ref="_B8E76F06-BD95-4695-AFB5-C72397A3B261" />
+						<orm:RoleInstances>
+							<orm:EntityTypeRoleInstance id="_EC9D1614-9AB6-454F-B889-7C998F6FADD8" ref="_238BB018-A02C-4F80-B410-C737C5EDE8B8" />
+							<orm:EntityTypeRoleInstance id="_FA409DE1-A91D-4D8A-BB44-A8BAF2B5129E" ref="_41AB8EFF-8B98-4489-AB03-84B7E88399A0" />
+							<orm:EntityTypeRoleInstance id="_281FA171-50A4-4EFE-83B3-D399C9F916A7" ref="_65ED424C-314F-4779-AB14-3EE47E38331B" />
+							<orm:EntityTypeRoleInstance id="_F4BD6A5F-C185-4FD0-AEF4-AC1BD4332152" ref="_7A9F8930-9E90-40A0-98F6-45BCB50B6683" />
+							<orm:EntityTypeRoleInstance id="_5327073C-5F80-4309-A8FA-26E59094A050" ref="_88C341EB-1397-40D4-8A73-E3C84820557D" />
+						</orm:RoleInstances>
 					</orm:Role>
 				</orm:FactRoles>
 				<orm:ReadingOrders>
@@ -2846,16 +2923,6 @@
 				</orm:RoleSequence>
 				<orm:ImpliedByObjectType ref="_62D299CF-9D34-480E-BBE6-39C0086B8AF1" />
 			</orm:MandatoryConstraint>
-			<orm:MandatoryConstraint id="_1BEB4F5E-FF75-4D11-A5B5-662042722241" Name="ImpliedMandatoryConstraint2" IsImplied="true">
-				<orm:RoleSequence>
-					<orm:Role id="_B110E2F0-59DA-499F-8C4F-FF00FD30DE8A" ref="_E72C41BF-583B-4622-9DBD-1C32C974EF36" />
-					<orm:Role id="_CE8E6618-2CC7-40E5-96E4-ADD6FB6D29D1" ref="_CCBD4432-AC1E-49A8-94BF-B51D8812E651" />
-					<orm:Role id="_1A9CDA39-ACA6-463D-A3D6-DBD7675F9FD0" ref="_25D35D21-6428-40A5-98F0-C686923442B7" />
-					<orm:Role id="_7DEF3D75-21A7-4DBB-B0A1-9B56665598F0" ref="_72E811E0-B85C-4478-9C35-7745BDD6C96C" />
-					<orm:Role id="_4F9CD80C-BB21-4CF7-B82D-251A53D09FF1" ref="_4F296281-168F-40F7-AE6E-D7EA9620C0F6" />
-				</orm:RoleSequence>
-				<orm:ImpliedByObjectType ref="_E9252088-E295-4931-B271-AD146B5BBF56" />
-			</orm:MandatoryConstraint>
 			<orm:MandatoryConstraint id="_28F30913-F41F-47EE-A11E-913B586B7C66" Name="ImpliedMandatoryConstraint3" IsImplied="true">
 				<orm:RoleSequence>
 					<orm:Role id="_44943378-6D56-4342-AA50-9568F69704D0" ref="_AD93366C-DBA6-4226-9109-8F6ED0BBE4FA" />
@@ -3035,6 +3102,16 @@
 				</orm:RoleSequence>
 				<orm:ImpliedByObjectType ref="_45A1E5F6-B139-46AA-B017-F605FCA10700" />
 			</orm:MandatoryConstraint>
+			<orm:MandatoryConstraint id="_1C5048C0-5703-43D5-8B61-BA95E9AECA19" Name="SimpleMandatoryConstraint29" IsSimple="true">
+				<orm:RoleSequence>
+					<orm:Role id="_D632ACC2-AE11-44A8-A7AF-7F40C1A14476" ref="_E72C41BF-583B-4622-9DBD-1C32C974EF36" />
+				</orm:RoleSequence>
+			</orm:MandatoryConstraint>
+			<orm:MandatoryConstraint id="_AAED6C08-3ABB-4B78-A2F9-3BF558ACF094" Name="SimpleMandatoryConstraint30" IsSimple="true">
+				<orm:RoleSequence>
+					<orm:Role id="_DC4F2D0E-6716-491C-A29F-6C82DB31AF98" ref="_CCBD4432-AC1E-49A8-94BF-B51D8812E651" />
+				</orm:RoleSequence>
+			</orm:MandatoryConstraint>
 			<orm:ExclusionConstraint id="_33D79BD6-C0E0-4510-B4B4-58901EA78A3C" Name="ExclusionConstraint1">
 				<orm:RoleSequences>
 					<orm:RoleSequence id="_2B593F58-53BE-4CF2-B4B7-072380D0FD97">
@@ -3069,54 +3146,6 @@
 			<orm:TrueOrFalseLogicalDataType id="_02E16752-D564-42D0-B47B-569F34A828FF" />
 		</orm:DataTypes>
 		<orm:ModelErrors>
-			<orm:PopulationMandatoryError id="_A6FE35AF-4188-4BD9-A05B-9B5D6E12BED6" Name="'CityName' instance 'Sandy' in model 'RentalPrices' must participate in fact type 'CityHasCityName'.">
-				<orm:MandatoryConstraint ref="_AA19557C-4650-4105-8130-29369A7876D6" />
-				<orm:ObjectTypeInstance ref="_4295AC79-95E0-41F3-B592-06162E1F0606" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_A8EE71DB-82B5-4BD1-A394-989B16196E11" Name="'CityName' instance 'South Jordan' in model 'RentalPrices' must participate in fact type 'CityHasCityName'.">
-				<orm:MandatoryConstraint ref="_AA19557C-4650-4105-8130-29369A7876D6" />
-				<orm:ObjectTypeInstance ref="_D3181A82-9530-4074-859C-BDBE50938E5F" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_EA85CB67-9431-4784-8223-1FE11E33DE9F" Name="'CityName' instance 'Draper' in model 'RentalPrices' must participate in fact type 'CityHasCityName'.">
-				<orm:MandatoryConstraint ref="_AA19557C-4650-4105-8130-29369A7876D6" />
-				<orm:ObjectTypeInstance ref="_D6C1192D-F063-4DAE-B556-76F128507215" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_1793EE1F-117C-4EA1-86C8-9F010ACF2C18" Name="'CityName' instance 'Murray' in model 'RentalPrices' must participate in fact type 'CityHasCityName'.">
-				<orm:MandatoryConstraint ref="_AA19557C-4650-4105-8130-29369A7876D6" />
-				<orm:ObjectTypeInstance ref="_23AC11BC-273C-400B-8A6C-4E751BA41822" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_2031A2FE-ACBE-4DF1-8B3B-C01E0E89CAAC" Name="'State' instance 'UT' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_CB523427-1E32-4B32-99B2-70608E185250" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_74BE9342-1968-4B68-A7B1-7F5AA96E7105" Name="'State' instance 'CO' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_7F8FC0E7-FA58-432F-B325-8C5058A8B34E" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_EF6E8BDD-9BE0-42B4-9AC1-D17B723517C4" Name="'State' instance 'WY' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_7F471A32-A32C-4206-9076-BBE9873281B1" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_1FCC1ED8-B53C-46C1-85B1-E8868D6850C0" Name="'State' instance 'ID' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_66F32F7F-506D-488B-AF0C-97CC6A399950" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_34281E24-BC88-4A57-89DB-C9E42924808C" Name="'State' instance 'NV' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_75E1EF19-1BB2-4B44-A3CD-9F1DEE4DED9C" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_A5751AFF-818F-4912-B617-F3F44A0C08D2" Name="'State' instance 'CA' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_F82CEFBC-6DC2-405D-BE59-8A12E5D7F4C3" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_E2E3541F-A885-4DE8-AB28-D1E1758FF24F" Name="'State' instance 'WA' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_3DF1E09A-F838-4C6C-8ACF-1BF4A10EAB24" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_21FB890E-17A5-4B8D-8954-13A3B64E671A" Name="'State' instance 'OR' in model 'RentalPrices' must participate in fact type 'CityIsInState'.">
-				<orm:MandatoryConstraint ref="_28F30913-F41F-47EE-A11E-913B586B7C66" />
-				<orm:ObjectTypeInstance ref="_27F3828E-2500-4737-AA19-D23BDEAC889D" />
-			</orm:PopulationMandatoryError>
 			<orm:PopulationMandatoryError id="_A2277FC8-719E-494B-85EC-E4F532D998B2" Name="'Neighborhood' instance '1234' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
 				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
 				<orm:ObjectTypeInstance ref="_BDD618D8-4509-4EF5-A824-EBD6DE0E735D" />
@@ -3141,9 +3170,6 @@
 				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
 				<orm:ObjectTypeInstance ref="_FB9698A5-9D7A-4FD1-86F2-161EC7FC5F74" />
 			</orm:PopulationMandatoryError>
-			<orm:TooFewFactTypeRoleInstancesError id="_490A72A4-58EB-480A-B92A-11DF64939633" Name="Fact instance '? has Salt Lake City' in model 'RentalPrices' has a partial population.">
-				<orm:FactTypeInstance ref="_29D491FE-6B40-47AA-9139-91BC8EB39F3B" />
-			</orm:TooFewFactTypeRoleInstancesError>
 		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_EDEDAC14-849A-4341-A878-DEA132C825C3" FormatString="{1}" ReferenceModeType="General" />

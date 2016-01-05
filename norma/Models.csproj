@@ -36,106 +36,97 @@
   <ItemGroup>
     <None Include="..\orm\calendar.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\calendar._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\CateringItems.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\CateringItems._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\CCF Query Builder.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\CCF Query Builder._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\ClimateReports.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\ClimateReports._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\ContentManagement.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\ContentManagement._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\CupcakeStore.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\CupcakeStore._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\FixAWreck_Model.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\FixAWreck_Model._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\Food.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\Food._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\Genealogy.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\Genealogy._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\GuestArtwork.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\GuestArtwork._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\HL7 Clinical Statement Pattern.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\HL7 Clinical Statement Pattern._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\LabModel.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\LabModel._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\LexicalMatcher.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\LexicalMatcher._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\MIAME schema from Chris Stoeckert.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\MIAME schema from Chris Stoeckert._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\Microarray.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\Microarray._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\MLM Commissions.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\MLM Commissions._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\OData.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\OData._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\PZ.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\PZ._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\RentalPrices.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\RentalPrices._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\Scraping.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\Scraping._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\SurveyMETA.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\SurveyMETA._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\Talent.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\Talent._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\WebServiceDefinition.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\WebServiceDefinition._ORMCustomToolReport.cs</LastGenOutput>
     </None>
     <None Include="..\orm\WebTickets.orm">
       <Generator>ORMCustomTool</Generator>
-      <LastGenOutput>..\norma\WebTickets._ORMCustomToolReport.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\orm\..\norma\calendar._ORMCustomToolReport.cs">
+      <Link>calendar._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>calendar.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\CateringItems._ORMCustomToolReport.cs">
       <Link>CateringItems._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>CateringItems.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\CateringItems._ORMCustomToolReport.cs">
+      <Link>CateringItems._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CateringItems.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\CCF Query Builder._ORMCustomToolReport.cs">
+      <Link>CCF Query Builder._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CCF Query Builder.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\CCF Query Builder._ORMCustomToolReport.cs">
       <Link>CCF Query Builder._ORMCustomToolReport.cs</Link>
@@ -147,10 +138,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>ClimateReports.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\ClimateReports._ORMCustomToolReport.cs">
+      <Link>ClimateReports._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ClimateReports.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\ContentManagement._ORMCustomToolReport.cs">
       <Link>ContentManagement._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>ContentManagement.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\ContentManagement._ORMCustomToolReport.cs">
+      <Link>ContentManagement._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ContentManagement.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\CupcakeStore._ORMCustomToolReport.cs">
+      <Link>CupcakeStore._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CupcakeStore.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\CupcakeStore._ORMCustomToolReport.cs">
       <Link>CupcakeStore._ORMCustomToolReport.cs</Link>
@@ -162,10 +168,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>FixAWreck_Model.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\FixAWreck_Model._ORMCustomToolReport.cs">
+      <Link>FixAWreck_Model._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FixAWreck_Model.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\Food._ORMCustomToolReport.cs">
       <Link>Food._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>Food.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\Food._ORMCustomToolReport.cs">
+      <Link>Food._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Food.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\Genealogy._ORMCustomToolReport.cs">
+      <Link>Genealogy._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Genealogy.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\Genealogy._ORMCustomToolReport.cs">
       <Link>Genealogy._ORMCustomToolReport.cs</Link>
@@ -177,10 +198,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>GuestArtwork.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\GuestArtwork._ORMCustomToolReport.cs">
+      <Link>GuestArtwork._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GuestArtwork.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\HL7 Clinical Statement Pattern._ORMCustomToolReport.cs">
       <Link>HL7 Clinical Statement Pattern._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>HL7 Clinical Statement Pattern.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\HL7 Clinical Statement Pattern._ORMCustomToolReport.cs">
+      <Link>HL7 Clinical Statement Pattern._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HL7 Clinical Statement Pattern.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\LabModel._ORMCustomToolReport.cs">
+      <Link>LabModel._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LabModel.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\LabModel._ORMCustomToolReport.cs">
       <Link>LabModel._ORMCustomToolReport.cs</Link>
@@ -192,10 +228,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>LexicalMatcher.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\LexicalMatcher._ORMCustomToolReport.cs">
+      <Link>LexicalMatcher._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LexicalMatcher.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\MIAME schema from Chris Stoeckert._ORMCustomToolReport.cs">
       <Link>MIAME schema from Chris Stoeckert._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>MIAME schema from Chris Stoeckert.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\MIAME schema from Chris Stoeckert._ORMCustomToolReport.cs">
+      <Link>MIAME schema from Chris Stoeckert._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MIAME schema from Chris Stoeckert.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\Microarray._ORMCustomToolReport.cs">
+      <Link>Microarray._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Microarray.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\Microarray._ORMCustomToolReport.cs">
       <Link>Microarray._ORMCustomToolReport.cs</Link>
@@ -207,10 +258,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>MLM Commissions.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\MLM Commissions._ORMCustomToolReport.cs">
+      <Link>MLM Commissions._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MLM Commissions.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\OData._ORMCustomToolReport.cs">
       <Link>OData._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>OData.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\OData._ORMCustomToolReport.cs">
+      <Link>OData._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OData.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\PZ._ORMCustomToolReport.cs">
+      <Link>PZ._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PZ.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\PZ._ORMCustomToolReport.cs">
       <Link>PZ._ORMCustomToolReport.cs</Link>
@@ -222,10 +288,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>RentalPrices.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\RentalPrices._ORMCustomToolReport.cs">
+      <Link>RentalPrices._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RentalPrices.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\Scraping._ORMCustomToolReport.cs">
       <Link>Scraping._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>Scraping.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\Scraping._ORMCustomToolReport.cs">
+      <Link>Scraping._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Scraping.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\SurveyMETA._ORMCustomToolReport.cs">
+      <Link>SurveyMETA._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SurveyMETA.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\SurveyMETA._ORMCustomToolReport.cs">
       <Link>SurveyMETA._ORMCustomToolReport.cs</Link>
@@ -237,10 +318,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Talent.orm</DependentUpon>
     </Compile>
+    <Compile Include="..\orm\..\norma\Talent._ORMCustomToolReport.cs">
+      <Link>Talent._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Talent.orm</DependentUpon>
+    </Compile>
     <Compile Include="..\orm\..\norma\WebServiceDefinition._ORMCustomToolReport.cs">
       <Link>WebServiceDefinition._ORMCustomToolReport.cs</Link>
       <AutoGen>True</AutoGen>
       <DependentUpon>WebServiceDefinition.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\WebServiceDefinition._ORMCustomToolReport.cs">
+      <Link>WebServiceDefinition._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WebServiceDefinition.orm</DependentUpon>
+    </Compile>
+    <Compile Include="..\orm\..\norma\WebTickets._ORMCustomToolReport.cs">
+      <Link>WebTickets._ORMCustomToolReport.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WebTickets.orm</DependentUpon>
     </Compile>
     <Compile Include="..\orm\..\norma\WebTickets._ORMCustomToolReport.cs">
       <Link>WebTickets._ORMCustomToolReport.cs</Link>
