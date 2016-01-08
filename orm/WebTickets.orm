@@ -10217,10 +10217,6 @@
 				<orm:MandatoryConstraint ref="_ACF3408D-D15E-468D-BA8A-31A2C843A646" />
 				<orm:ObjectTypeInstance ref="_ACF6EE41-D59D-44DC-A451-2001330AC650" />
 			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_0FF33714-29C8-40EA-A354-6063A0E30B33" Name="'Event Type' instance 'Dance' in model 'WebTickets' must participate in fact type 'EventHasEventType'.">
-				<orm:MandatoryConstraint ref="_ACF3408D-D15E-468D-BA8A-31A2C843A646" />
-				<orm:ObjectTypeInstance ref="_313F5CBB-069A-4D3D-BD85-7FB98FA4A757" />
-			</orm:PopulationMandatoryError>
 			<orm:PopulationMandatoryError id="_E4A7F715-7074-4A62-9643-5649E18B5464" Name="'Event Type' instance 'Tour' in model 'WebTickets' must participate in fact type 'EventHasEventType'.">
 				<orm:MandatoryConstraint ref="_ACF3408D-D15E-468D-BA8A-31A2C843A646" />
 				<orm:ObjectTypeInstance ref="_C22271AC-E886-4664-A2BA-A7CF45AEA22E" />
@@ -10306,6 +10302,10 @@
 			<orm:PopulationMandatoryError id="_AF93BA07-5A4A-4ACA-881B-EB84983266F7" Name="'Promoter' instance 'd4e5f6-2222' in model 'WebTickets' must participate in fact type 'AccountIsASubtypeOfPromoter' or fact type 'EmployeeIsASubtypeOfPromoter'.">
 				<orm:MandatoryConstraint ref="_72EAD4B3-B392-46AB-8654-C7F240BBAB37" />
 				<orm:ObjectTypeInstance ref="_EA5ABEA9-C965-4288-A6F9-F5D0A16EF3C7" />
+			</orm:PopulationMandatoryError>
+			<orm:PopulationMandatoryError id="_B2669E2A-2BBE-4DBD-8E13-7A7A36AEF9A0" Name="'Event Type' instance 'Dance' in model 'WebTickets' must participate in fact type 'EventHasEventType'.">
+				<orm:MandatoryConstraint ref="_ACF3408D-D15E-468D-BA8A-31A2C843A646" />
+				<orm:ObjectTypeInstance ref="_313F5CBB-069A-4D3D-BD85-7FB98FA4A757" />
 			</orm:PopulationMandatoryError>
 		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>

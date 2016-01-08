@@ -76,7 +76,7 @@
 					<orm:Role ref="_88D49725-7108-4DB2-805F-87CF3A9DA492" />
 					<orm:Role ref="_55B9701F-1A71-4268-BBD0-E74A045C226F" />
 				</orm:PlayedRoles>
-				<orm:ConceptualDataType id="_5E5C59E9-5999-47DC-B67C-4270602CC342" ref="_912C6CE9-9AD1-47B3-885A-1A5C22B16B1A" Scale="0" Length="0" />
+				<orm:ConceptualDataType id="_5E5C59E9-5999-47DC-B67C-4270602CC342" ref="_EC0EDD28-3A5F-48A1-BDF1-F8A00EC6877E" Scale="0" Length="0" />
 			</orm:ValueType>
 			<orm:EntityType id="_02D66AF5-238C-4B8E-BC0E-B818B3BBF872" Name="Souvenir Art" _ReferenceMode="">
 				<orm:PlayedRoles>
@@ -1587,35 +1587,12 @@
 					</orm:RoleSequence>
 				</orm:RoleSequences>
 			</orm:ExclusionConstraint>
-			<orm:SubsetConstraint id="_594ACE45-EB23-4FAF-BC4E-65BE5F0ADA84" Name="SubsetConstraint1">
-				<orm:RoleSequences>
-					<orm:RoleSequence id="_B2742DFC-0D96-49E6-9594-BF3A7E2265BC">
-						<orm:Role id="_CE469AB6-E2F0-4438-A8A5-BB53BFE72CCC" ref="_0A0DA2CE-B55D-49DD-961A-A8A6E1BF6D79" />
-						<orm:Role id="_B7F7794E-AAF6-4703-9678-8B2087B90549" ref="_53CA9363-3162-4CD0-817B-D87021F04001" />
-					</orm:RoleSequence>
-					<orm:RoleSequence id="_5E2E7DA5-7909-453A-A115-769731C043BC">
-						<orm:Role id="_F3490614-CF1A-4CDF-9826-8D03C66BE0F5" ref="_B8CDD5B5-791A-4DE2-A408-1230003F99F1" />
-						<orm:Role id="_19BA5CC7-635F-4D68-8FB9-30941B4B8E83" ref="_E3F90DCE-DEB6-45F9-BE26-7E2D4BDA2EFF" />
-					</orm:RoleSequence>
-				</orm:RoleSequences>
-			</orm:SubsetConstraint>
 		</orm:Constraints>
 		<orm:DataTypes>
-			<orm:UnspecifiedDataType id="_912C6CE9-9AD1-47B3-885A-1A5C22B16B1A" />
 			<orm:VariableLengthTextDataType id="_E51EFF5A-7F59-4488-A31E-A0775B37E4CE" />
 			<orm:AutoCounterNumericDataType id="_803063B7-FC16-4934-8F35-9D6D0BCF502D" />
+			<orm:DateTemporalDataType id="_EC0EDD28-3A5F-48A1-BDF1-F8A00EC6877E" />
 		</orm:DataTypes>
-		<orm:ModelErrors>
-			<orm:DataTypeNotSpecifiedError id="_B52E57A4-E1AC-4F42-8E90-E11E0C382F8C" Name="A data type must be specified for value type 'Date' in model 'GuestArtwork'.">
-				<orm:ConceptualDataType ref="_5E5C59E9-5999-47DC-B67C-4270602CC342" />
-			</orm:DataTypeNotSpecifiedError>
-			<orm:NotWellModeledSubsetAndMandatoryError id="_8EAEC6EB-8B45-4A2C-9376-64B0BBC0B4CD" Name="Subset constraint 'SubsetConstraint1' and mandatory constraint 'SimpleMandatoryConstraint9' in model 'GuestArtwork' are not well-modeled. Suggested ways to fix: (1) Delete the mandatory constraint. (2) Add another mandatory constraint on the superset role. (3) Delete the subset constraint.">
-				<orm:Constraints>
-					<orm:SubsetConstraint ref="_594ACE45-EB23-4FAF-BC4E-65BE5F0ADA84" />
-					<orm:MandatoryConstraint ref="_175BD9F2-AB8C-4BCF-82F4-F333215EF8CC" />
-				</orm:Constraints>
-			</orm:NotWellModeledSubsetAndMandatoryError>
-		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_D2B85FD6-A543-4B20-BF54-1C0A61E5E42B" FormatString="{1}" ReferenceModeType="General" />
 			<orm:ReferenceModeKind id="_EFF80621-5231-418E-AEEE-A265193604BD" FormatString="{0}_{1}" ReferenceModeType="Popular" />
@@ -1704,9 +1681,9 @@
 			<ormDiagram:ObjectTypeShape id="_7F988314-E02A-4FB4-AE6B-534BC972DA82" IsExpanded="true" AbsoluteBounds="4.2122984819412226, 4.1208848364651205, 0.77984201431274414, 0.22950302660465241">
 				<ormDiagram:Subject ref="_02D66AF5-238C-4B8E-BC0E-B818B3BBF872" />
 			</ormDiagram:ObjectTypeShape>
-			<ormDiagram:FactTypeShape id="_AFC12F32-9169-4637-899D-27C5BB87A135" IsExpanded="true" AbsoluteBounds="2.1835115704597028, 3.3378244332554807, 0.31388888899236916, 0.38388888899236917" DisplayOrientation="VerticalRotatedRight">
+			<ormDiagram:FactTypeShape id="_AFC12F32-9169-4637-899D-27C5BB87A135" IsExpanded="true" AbsoluteBounds="2.3835115704597025, 3.4044910999221476, 0.31388888899236916, 0.38388888899236917" DisplayOrientation="VerticalRotatedRight">
 				<ormDiagram:RelativeShapes>
-					<ormDiagram:ReadingShape id="_5A91AE1F-1D39-4C4F-B3B5-127692C85F7D" IsExpanded="true" AbsoluteBounds="1.8668449037930359, 3.7947981688835091, 0.96204739809036255, 0.12950302660465241">
+					<ormDiagram:ReadingShape id="_5A91AE1F-1D39-4C4F-B3B5-127692C85F7D" IsExpanded="true" AbsoluteBounds="2.0668449037930356, 3.8614648355501759, 0.96204739809036255, 0.12950302660465241">
 						<ormDiagram:Subject ref="_A6F370C6-F6F4-4939-8B2F-94432D7BDA9F" />
 					</ormDiagram:ReadingShape>
 				</ormDiagram:RelativeShapes>
@@ -1754,9 +1731,6 @@
 			</ormDiagram:FactTypeShape>
 			<ormDiagram:ExternalConstraintShape id="_AF29675E-AFA2-4781-A188-72ECCDDC0EBE" IsExpanded="true" AbsoluteBounds="4.55806143270323, 2.0923913575751114, 0.16, 0.16">
 				<ormDiagram:Subject ref="_1E3CEC81-345B-4A86-BF61-D2E7374A19EA" />
-			</ormDiagram:ExternalConstraintShape>
-			<ormDiagram:ExternalConstraintShape id="_E6B056D2-DE66-451B-B838-CA3A09B69F14" IsExpanded="true" AbsoluteBounds="1.5348731832979006, 3.4231884366848524, 0.16, 0.16">
-				<ormDiagram:Subject ref="_594ACE45-EB23-4FAF-BC4E-65BE5F0ADA84" />
 			</ormDiagram:ExternalConstraintShape>
 			<ormDiagram:ExternalConstraintShape id="_C9F96CDE-86B4-4EE9-841F-1C8EE23A5312" IsExpanded="true" AbsoluteBounds="3.4364583900009378, 1.972173975284699, 0.16, 0.16">
 				<ormDiagram:Subject ref="_7DA5CBA1-C799-4FEC-AEB7-10F75F93C616" />

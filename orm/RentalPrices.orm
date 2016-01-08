@@ -330,6 +330,26 @@
 					<orm:Role ref="_C08C012C-0024-4C46-A3C2-E118F7F1DE5B" />
 				</orm:PlayedRoles>
 				<orm:ConceptualDataType id="_C35A0018-36C4-4285-81C0-6D4A70662F0A" ref="_C5179B06-4044-4469-B588-2A6AFA662E55" Scale="0" Length="40" />
+				<orm:Instances>
+					<orm:ValueTypeInstance id="_2B2BE878-B25E-4A9A-AC35-D7BA3A8C185D">
+						<orm:Value>Daybreak</orm:Value>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_C46C2DD6-BEEB-479B-B478-5853BE956FCA">
+						<orm:Value>Avenues</orm:Value>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_5FE6C9FF-2409-403D-8509-EB3B57F7CAF3">
+						<orm:Value>Sugarhouse</orm:Value>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_9EA116A5-23B3-492A-B6E2-3ACCF114ED20">
+						<orm:Value>Granary District</orm:Value>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_5903E7FA-790D-4B75-8999-01CC34BC65E3">
+						<orm:Value>9th &amp; 9th</orm:Value>
+					</orm:ValueTypeInstance>
+					<orm:ValueTypeInstance id="_A743DB29-63CF-4F35-AF5C-4D9326ACCCAE">
+						<orm:Value>Pepperwood</orm:Value>
+					</orm:ValueTypeInstance>
+				</orm:Instances>
 			</orm:ValueType>
 			<orm:EntityType id="_65831526-1EF9-471D-A76F-28EB1FB6C8E2" Name="URL" _ReferenceMode="location">
 				<orm:PlayedRoles>
@@ -1543,9 +1563,25 @@
 				<orm:FactRoles>
 					<orm:Role id="_DACF8F25-0BD4-4A17-BA79-E4C3B7A54A26" _IsMandatory="true" _Multiplicity="ZeroToMany" Name="">
 						<orm:RolePlayer ref="_8D9E9643-FEDE-407F-9943-1DF6DBC0280B" />
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance id="_90CCC194-6B4E-4DF9-84EE-A9CD9B36CEC2" ref="_60B6BB2C-C804-4961-AD29-A0C0B8DA6388" />
+							<orm:FactTypeRoleInstance id="_23B97ED1-46A3-4413-BC88-1063099299D3" ref="_BDD618D8-4509-4EF5-A824-EBD6DE0E735D" />
+							<orm:FactTypeRoleInstance id="_4F10B9F2-F332-4F05-984A-49FB9B88E325" ref="_7B905344-891D-4210-ADCC-EA8E2A8A495B" />
+							<orm:FactTypeRoleInstance id="_1319D661-A7EA-4ABB-AFD5-CB8B7DFABEF1" ref="_0C5D07E4-1F95-4837-9A50-EFB254BE6C15" />
+							<orm:FactTypeRoleInstance id="_78748682-2B55-4478-87BF-E13E317A46F1" ref="_F347D4B3-AE06-40B6-8851-368934D059E3" />
+							<orm:FactTypeRoleInstance id="_393058D2-491C-4650-8D3B-5BD372260BDF" ref="_FB9698A5-9D7A-4FD1-86F2-161EC7FC5F74" />
+						</orm:RoleInstances>
 					</orm:Role>
 					<orm:Role id="_C08C012C-0024-4C46-A3C2-E118F7F1DE5B" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
 						<orm:RolePlayer ref="_7EFC188F-68A2-407E-8D8B-9095BD976202" />
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance id="_05BC7638-78B3-4FC1-A0C7-99EA7A2454B3" ref="_2B2BE878-B25E-4A9A-AC35-D7BA3A8C185D" />
+							<orm:FactTypeRoleInstance id="_E9B42CC4-6E52-4681-BA06-A90542D51675" ref="_C46C2DD6-BEEB-479B-B478-5853BE956FCA" />
+							<orm:FactTypeRoleInstance id="_C0E2EA59-36B1-4138-A02A-63FE03F02B42" ref="_5FE6C9FF-2409-403D-8509-EB3B57F7CAF3" />
+							<orm:FactTypeRoleInstance id="_47E17A50-A5E4-454B-95EA-04BDD0616B22" ref="_9EA116A5-23B3-492A-B6E2-3ACCF114ED20" />
+							<orm:FactTypeRoleInstance id="_6B98A9BF-A08D-4252-8397-6E7E46F95B99" ref="_5903E7FA-790D-4B75-8999-01CC34BC65E3" />
+							<orm:FactTypeRoleInstance id="_BE7FABF1-A735-4544-8721-BA3F18830D8D" ref="_A743DB29-63CF-4F35-AF5C-4D9326ACCCAE" />
+						</orm:RoleInstances>
 					</orm:Role>
 				</orm:FactRoles>
 				<orm:ReadingOrders>
@@ -1582,6 +1618,44 @@
 					<orm:UniquenessConstraint ref="_72B4B592-D1D5-4C3A-B110-DF0DAC84AD17" />
 					<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
 				</orm:InternalConstraints>
+				<orm:Instances>
+					<orm:FactTypeInstance id="_6B0659E4-D3F5-46A2-8DE0-A254031DD300">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_90CCC194-6B4E-4DF9-84EE-A9CD9B36CEC2" />
+							<orm:FactTypeRoleInstance ref="_05BC7638-78B3-4FC1-A0C7-99EA7A2454B3" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_9ACE63E2-F138-4E8C-8E77-16F0374AEE52">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_23B97ED1-46A3-4413-BC88-1063099299D3" />
+							<orm:FactTypeRoleInstance ref="_E9B42CC4-6E52-4681-BA06-A90542D51675" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_058FD89B-9761-44A9-9E88-A7A1D0DB9B71">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_4F10B9F2-F332-4F05-984A-49FB9B88E325" />
+							<orm:FactTypeRoleInstance ref="_C0E2EA59-36B1-4138-A02A-63FE03F02B42" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_4E8F331D-CEBB-4158-AD61-F36DE3143474">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_1319D661-A7EA-4ABB-AFD5-CB8B7DFABEF1" />
+							<orm:FactTypeRoleInstance ref="_47E17A50-A5E4-454B-95EA-04BDD0616B22" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_B9BE2CE3-3518-492D-8452-12BF50F93A1E">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_78748682-2B55-4478-87BF-E13E317A46F1" />
+							<orm:FactTypeRoleInstance ref="_6B98A9BF-A08D-4252-8397-6E7E46F95B99" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+					<orm:FactTypeInstance id="_0B180EC3-5E18-4200-A0B4-2B03C260E3B3">
+						<orm:RoleInstances>
+							<orm:FactTypeRoleInstance ref="_393058D2-491C-4650-8D3B-5BD372260BDF" />
+							<orm:FactTypeRoleInstance ref="_BE7FABF1-A735-4544-8721-BA3F18830D8D" />
+						</orm:RoleInstances>
+					</orm:FactTypeInstance>
+				</orm:Instances>
 			</orm:Fact>
 			<orm:Fact id="_3DF1C390-85D5-43A7-89E3-45AD7844894E" _Name="ListingIsInNewspaper">
 				<orm:FactRoles>
@@ -3145,32 +3219,6 @@
 			<orm:DateTemporalDataType id="_A9676DDC-0514-41C9-A765-7E626D728993" />
 			<orm:TrueOrFalseLogicalDataType id="_02E16752-D564-42D0-B47B-569F34A828FF" />
 		</orm:DataTypes>
-		<orm:ModelErrors>
-			<orm:PopulationMandatoryError id="_A2277FC8-719E-494B-85EC-E4F532D998B2" Name="'Neighborhood' instance '1234' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_BDD618D8-4509-4EF5-A824-EBD6DE0E735D" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_3F194AE7-0639-491E-9F5B-779308203062" Name="'Neighborhood' instance '2345' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_7B905344-891D-4210-ADCC-EA8E2A8A495B" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_F86BCA72-7ACB-4D3B-906B-32F7CEE1A373" Name="'Neighborhood' instance '3456' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_0C5D07E4-1F95-4837-9A50-EFB254BE6C15" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_8D85705A-AE8A-4CF6-B699-80AD310B2B52" Name="'Neighborhood' instance '4567' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_F347D4B3-AE06-40B6-8851-368934D059E3" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_6678008C-C822-4BAB-BFFC-4C909496329A" Name="'Neighborhood' instance '5678' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_60B6BB2C-C804-4961-AD29-A0C0B8DA6388" />
-			</orm:PopulationMandatoryError>
-			<orm:PopulationMandatoryError id="_D699B43F-3E61-454B-AD8C-710612A8873F" Name="'Neighborhood' instance '6789' in model 'RentalPrices' must participate in fact type 'NeighborhoodHasName'.">
-				<orm:MandatoryConstraint ref="_7FDF55A6-3BBF-43A3-BF24-696E5D645139" />
-				<orm:ObjectTypeInstance ref="_FB9698A5-9D7A-4FD1-86F2-161EC7FC5F74" />
-			</orm:PopulationMandatoryError>
-		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_EDEDAC14-849A-4341-A878-DEA132C825C3" FormatString="{1}" ReferenceModeType="General" />
 			<orm:ReferenceModeKind id="_2B92E484-D155-482A-84D1-C7AF08B3E14F" FormatString="{0}_{1}" ReferenceModeType="Popular" />

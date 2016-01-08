@@ -2,11 +2,13 @@
 <ormRoot:ORM2 xmlns:orm="http://schemas.neumont.edu/ORM/2006-04/ORMCore" xmlns:ormDiagram="http://schemas.neumont.edu/ORM/2006-04/ORMDiagram" xmlns:ormRoot="http://schemas.neumont.edu/ORM/2006-04/ORMRoot">
 	<orm:ORMModel id="_234BB300-0E80-4BE6-831F-EB8D25F3A6B8" Name="HL7 Clinical Statement Pattern">
 		<orm:Objects>
-			<orm:EntityType id="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" Name="Clinical Statement" _ReferenceMode="">
+			<orm:EntityType id="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" Name="Clinical Statement" _ReferenceMode="id">
 				<orm:PlayedRoles>
 					<orm:SupertypeMetaRole ref="_A163019E-CC26-4C82-95EB-64CA895EF763" />
 					<orm:SupertypeMetaRole ref="_238AA8CF-738B-4A89-8F98-4F89F45C13D1" />
+					<orm:Role ref="_98640268-8429-4471-8F7E-87AA6D989BC4" />
 				</orm:PlayedRoles>
+				<orm:PreferredIdentifier ref="_0FEA610C-740C-4840-8F6F-997541F4A052" />
 			</orm:EntityType>
 			<orm:EntityType id="_46653E4E-A27A-431D-B259-D695F94BF61A" Name="Act Choice" _ReferenceMode="">
 				<orm:PlayedRoles>
@@ -70,12 +72,14 @@
 				<orm:PreferredIdentifier ref="_9E5308FB-DA27-41A2-99C1-FEA0D7C3C16F" />
 				<orm:NestedPredicate id="_811EC38F-3BD9-432E-9A86-40C6D2579EB9" ref="_BCB14C7A-342C-45AA-8F10-A19130FAC8DD" IsImplied="true" />
 			</orm:ObjectifiedType>
-			<orm:EntityType id="_3EC0D882-9432-4183-A521-6BEABF6C2875" Name="Provider or Patient or Related" _ReferenceMode="">
+			<orm:EntityType id="_3EC0D882-9432-4183-A521-6BEABF6C2875" Name="Provider or Patient or Related" _ReferenceMode="id">
 				<orm:PlayedRoles>
 					<orm:SupertypeMetaRole ref="_996E570C-31E5-4F9A-AFB1-AAF35F26BECC" />
 					<orm:SupertypeMetaRole ref="_F85D8158-C4F0-47EE-A3A7-C66D9BFC5B0B" />
 					<orm:SupertypeMetaRole ref="_84EFEA0C-8F17-4DF6-B1F3-2ACC682ED4BE" />
+					<orm:Role ref="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" />
 				</orm:PlayedRoles>
+				<orm:PreferredIdentifier ref="_1DDD47C7-5A0E-40D2-8922-6B8E09F5C9BC" />
 			</orm:EntityType>
 			<orm:EntityType id="_E1BCF8C4-91D3-4719-BCE0-1409BEC04394" Name="Related Entity" _ReferenceMode="">
 				<orm:PlayedRoles>
@@ -102,6 +106,18 @@
 					<orm:SubtypeMetaRole ref="_825EABDA-9089-4EAD-8E0A-117681F34A17" />
 				</orm:PlayedRoles>
 			</orm:EntityType>
+			<orm:ValueType id="_40815B36-4488-4845-BB6B-FF08DD3A2708" Name="Provider or Patient or Related_id">
+				<orm:PlayedRoles>
+					<orm:Role ref="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" />
+				</orm:PlayedRoles>
+				<orm:ConceptualDataType id="_B2822065-179E-4FA2-BA92-B3100917136D" ref="_397791EA-79D7-4EAD-902E-3301E7D6B4C9" Scale="0" Length="0" />
+			</orm:ValueType>
+			<orm:ValueType id="_B1E2E283-B2E2-4AF3-8F6A-052328BB94EA" Name="Clinical Statement_id">
+				<orm:PlayedRoles>
+					<orm:Role ref="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" />
+				</orm:PlayedRoles>
+				<orm:ConceptualDataType id="_552F8AF5-5B37-48CD-BEAD-49FCDA5F7A4A" ref="_397791EA-79D7-4EAD-902E-3301E7D6B4C9" Scale="0" Length="0" />
+			</orm:ValueType>
 		</orm:Objects>
 		<orm:Facts>
 			<orm:SubtypeFact id="_DA39CF50-A1D9-4429-A2FA-CA10BAB46A01" _Name="Act ChoiceIsASubtypeOfClinical Statement" PreferredIdentificationPath="true">
@@ -419,6 +435,96 @@
 					<orm:UniquenessConstraint ref="_3B2C8390-ED2B-41F7-91C1-15400554CE5F" />
 				</orm:InternalConstraints>
 			</orm:SubtypeFact>
+			<orm:Fact id="_BEB78036-20CC-48C0-B4B5-2BAF716A8551" _Name="ProviderOrPatientOrRelatedHasProviderOrPatientOrRelatedId">
+				<orm:FactRoles>
+					<orm:Role id="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" _IsMandatory="true" _Multiplicity="ZeroToOne" Name="">
+						<orm:RolePlayer ref="_3EC0D882-9432-4183-A521-6BEABF6C2875" />
+					</orm:Role>
+					<orm:Role id="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
+						<orm:RolePlayer ref="_40815B36-4488-4845-BB6B-FF08DD3A2708" />
+					</orm:Role>
+				</orm:FactRoles>
+				<orm:ReadingOrders>
+					<orm:ReadingOrder id="_0CFD07A1-1D7E-41B4-8270-7AF8DBE75DC7">
+						<orm:Readings>
+							<orm:Reading id="_291FB5E9-7DFD-4A59-A70A-C6B371F08958">
+								<orm:Data>{0} has {1}</orm:Data>
+								<orm:ExpandedData>
+									<orm:RoleText RoleIndex="0" FollowingText=" has " />
+								</orm:ExpandedData>
+							</orm:Reading>
+						</orm:Readings>
+						<orm:RoleSequence>
+							<orm:Role ref="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" />
+							<orm:Role ref="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" />
+						</orm:RoleSequence>
+					</orm:ReadingOrder>
+					<orm:ReadingOrder id="_438D5D11-B700-4924-8BA1-CD67D7C99B99">
+						<orm:Readings>
+							<orm:Reading id="_E417825A-0579-440A-924D-9362613260E4">
+								<orm:Data>{0} is of {1}</orm:Data>
+								<orm:ExpandedData>
+									<orm:RoleText RoleIndex="0" FollowingText=" is of " />
+								</orm:ExpandedData>
+							</orm:Reading>
+						</orm:Readings>
+						<orm:RoleSequence>
+							<orm:Role ref="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" />
+							<orm:Role ref="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" />
+						</orm:RoleSequence>
+					</orm:ReadingOrder>
+				</orm:ReadingOrders>
+				<orm:InternalConstraints>
+					<orm:UniquenessConstraint ref="_1DDD47C7-5A0E-40D2-8922-6B8E09F5C9BC" />
+					<orm:UniquenessConstraint ref="_84404D84-6D57-4233-948D-C56FF72A9162" />
+					<orm:MandatoryConstraint ref="_897E1F17-D4CF-4806-A807-0665ACA87857" />
+				</orm:InternalConstraints>
+			</orm:Fact>
+			<orm:Fact id="_AC151B78-3C42-40D5-8CF5-C249F83B8AC4" _Name="ClinicalStatementHasClinicalStatementId">
+				<orm:FactRoles>
+					<orm:Role id="_98640268-8429-4471-8F7E-87AA6D989BC4" _IsMandatory="true" _Multiplicity="ZeroToOne" Name="">
+						<orm:RolePlayer ref="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" />
+					</orm:Role>
+					<orm:Role id="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" _IsMandatory="false" _Multiplicity="ExactlyOne" Name="">
+						<orm:RolePlayer ref="_B1E2E283-B2E2-4AF3-8F6A-052328BB94EA" />
+					</orm:Role>
+				</orm:FactRoles>
+				<orm:ReadingOrders>
+					<orm:ReadingOrder id="_AC3A466E-9F46-48FF-AA9A-AD6A428B823A">
+						<orm:Readings>
+							<orm:Reading id="_7C8D64BE-AB8D-462B-B35C-A2258B1D36FF">
+								<orm:Data>{0} has {1}</orm:Data>
+								<orm:ExpandedData>
+									<orm:RoleText RoleIndex="0" FollowingText=" has " />
+								</orm:ExpandedData>
+							</orm:Reading>
+						</orm:Readings>
+						<orm:RoleSequence>
+							<orm:Role ref="_98640268-8429-4471-8F7E-87AA6D989BC4" />
+							<orm:Role ref="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" />
+						</orm:RoleSequence>
+					</orm:ReadingOrder>
+					<orm:ReadingOrder id="_9C063EAA-947B-462E-8D66-B3242127C5FD">
+						<orm:Readings>
+							<orm:Reading id="_D9509DA4-148B-47F5-A8D1-50EE8A4A97D2">
+								<orm:Data>{0} is of {1}</orm:Data>
+								<orm:ExpandedData>
+									<orm:RoleText RoleIndex="0" FollowingText=" is of " />
+								</orm:ExpandedData>
+							</orm:Reading>
+						</orm:Readings>
+						<orm:RoleSequence>
+							<orm:Role ref="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" />
+							<orm:Role ref="_98640268-8429-4471-8F7E-87AA6D989BC4" />
+						</orm:RoleSequence>
+					</orm:ReadingOrder>
+				</orm:ReadingOrders>
+				<orm:InternalConstraints>
+					<orm:UniquenessConstraint ref="_0FEA610C-740C-4840-8F6F-997541F4A052" />
+					<orm:UniquenessConstraint ref="_90B444B2-15F9-46C0-8A00-17E67D3C7439" />
+					<orm:MandatoryConstraint ref="_6A99C8E8-E86D-4A75-9EBA-C265194503D0" />
+				</orm:InternalConstraints>
+			</orm:Fact>
 		</orm:Facts>
 		<orm:Constraints>
 			<orm:MandatoryConstraint id="_0D4818DF-9ECB-4795-AD2E-E23ADF5FB36C" Name="SimpleMandatoryConstraint1" IsSimple="true">
@@ -643,15 +749,54 @@
 				</orm:RoleSequence>
 				<orm:ImpliedByObjectType ref="_3EC0D882-9432-4183-A521-6BEABF6C2875" />
 			</orm:MandatoryConstraint>
+			<orm:UniquenessConstraint id="_1DDD47C7-5A0E-40D2-8922-6B8E09F5C9BC" Name="InternalUniquenessConstraint28" IsInternal="true">
+				<orm:RoleSequence>
+					<orm:Role id="_5B5EF854-980E-42AF-AB90-B20FB2F017A5" ref="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" />
+				</orm:RoleSequence>
+				<orm:PreferredIdentifierFor ref="_3EC0D882-9432-4183-A521-6BEABF6C2875" />
+			</orm:UniquenessConstraint>
+			<orm:UniquenessConstraint id="_84404D84-6D57-4233-948D-C56FF72A9162" Name="InternalUniquenessConstraint29" IsInternal="true">
+				<orm:RoleSequence>
+					<orm:Role id="_2D1FC4AB-7BFD-400D-8922-B46B2DBC8023" ref="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" />
+				</orm:RoleSequence>
+			</orm:UniquenessConstraint>
+			<orm:MandatoryConstraint id="_897E1F17-D4CF-4806-A807-0665ACA87857" Name="SimpleMandatoryConstraint15" IsSimple="true">
+				<orm:RoleSequence>
+					<orm:Role id="_28FE0D68-DCDD-4E03-AFF5-F1DD0B65194C" ref="_DBE2EB64-0C7B-4497-8BD0-04CDEFEAD97B" />
+				</orm:RoleSequence>
+			</orm:MandatoryConstraint>
+			<orm:MandatoryConstraint id="_E7BA8680-D58D-4211-86D6-CE65E44A1429" Name="ImpliedMandatoryConstraint3" IsImplied="true">
+				<orm:RoleSequence>
+					<orm:Role id="_4144E4E4-5FA6-47CB-A42A-58E8F4749907" ref="_7DDAB60C-6A7C-4F44-9AE6-39AC3E41AAE7" />
+				</orm:RoleSequence>
+				<orm:ImpliedByObjectType ref="_40815B36-4488-4845-BB6B-FF08DD3A2708" />
+			</orm:MandatoryConstraint>
+			<orm:UniquenessConstraint id="_0FEA610C-740C-4840-8F6F-997541F4A052" Name="InternalUniquenessConstraint30" IsInternal="true">
+				<orm:RoleSequence>
+					<orm:Role id="_AD71B387-1E9B-4F8D-A813-1C927CF7B257" ref="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" />
+				</orm:RoleSequence>
+				<orm:PreferredIdentifierFor ref="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" />
+			</orm:UniquenessConstraint>
+			<orm:UniquenessConstraint id="_90B444B2-15F9-46C0-8A00-17E67D3C7439" Name="InternalUniquenessConstraint31" IsInternal="true">
+				<orm:RoleSequence>
+					<orm:Role id="_3AE95C52-44D2-419A-A534-B9922BCDAA60" ref="_98640268-8429-4471-8F7E-87AA6D989BC4" />
+				</orm:RoleSequence>
+			</orm:UniquenessConstraint>
+			<orm:MandatoryConstraint id="_6A99C8E8-E86D-4A75-9EBA-C265194503D0" Name="SimpleMandatoryConstraint16" IsSimple="true">
+				<orm:RoleSequence>
+					<orm:Role id="_DCB14D8F-6775-4105-99A6-7485D8CBD01F" ref="_98640268-8429-4471-8F7E-87AA6D989BC4" />
+				</orm:RoleSequence>
+			</orm:MandatoryConstraint>
+			<orm:MandatoryConstraint id="_69255B85-B50D-40E1-B51F-A17D12096CEC" Name="ImpliedMandatoryConstraint4" IsImplied="true">
+				<orm:RoleSequence>
+					<orm:Role id="_A44B97C8-2B07-43A4-B713-1B5834A2D842" ref="_7E6C799A-88F3-4DE7-98F0-05ECCE61E9BA" />
+				</orm:RoleSequence>
+				<orm:ImpliedByObjectType ref="_B1E2E283-B2E2-4AF3-8F6A-052328BB94EA" />
+			</orm:MandatoryConstraint>
 		</orm:Constraints>
-		<orm:ModelErrors>
-			<orm:EntityTypeRequiresReferenceSchemeError id="_EA8F48C5-D23E-4B0A-BFCB-68F44666163E" Name="Entity type 'Clinical Statement' in model 'HL7 Clinical Statement Pattern' requires a local preferred reference scheme or supertype(s) that provide preferred identification.">
-				<orm:EntityType ref="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" />
-			</orm:EntityTypeRequiresReferenceSchemeError>
-			<orm:EntityTypeRequiresReferenceSchemeError id="_04B687CC-3EC5-4D28-8842-28006217263C" Name="Entity type 'Provider or Patient or Related' in model 'HL7 Clinical Statement Pattern' requires a local preferred reference scheme or supertype(s) that provide preferred identification.">
-				<orm:EntityType ref="_3EC0D882-9432-4183-A521-6BEABF6C2875" />
-			</orm:EntityTypeRequiresReferenceSchemeError>
-		</orm:ModelErrors>
+		<orm:DataTypes>
+			<orm:AutoCounterNumericDataType id="_397791EA-79D7-4EAD-902E-3301E7D6B4C9" />
+		</orm:DataTypes>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_9C19DC5F-4151-4187-8B74-0A5DE5E2E868" FormatString="{1}" ReferenceModeType="General" />
 			<orm:ReferenceModeKind id="_A7DACC28-8194-42D3-A588-BA42ABB0F951" FormatString="{0}_{1}" ReferenceModeType="Popular" />
@@ -660,7 +805,7 @@
 	</orm:ORMModel>
 	<ormDiagram:ORMDiagram id="_D20FF12C-E9A4-4AFB-BCCD-19FC177FC32D" IsCompleteView="false" Name="HL7 Clinical Statement Pattern" BaseFontName="Tahoma" BaseFontSize="0.0972222238779068">
 		<ormDiagram:Shapes>
-			<ormDiagram:ObjectTypeShape id="_F9329237-724C-4AE9-A37D-4BB846C88E83" IsExpanded="true" AbsoluteBounds="3.5729165871938067, 1.1354166666666665, 1.0731227350234986, 0.22950302660465241">
+			<ormDiagram:ObjectTypeShape id="_F9329237-724C-4AE9-A37D-4BB846C88E83" IsExpanded="true" AbsoluteBounds="3.5729165871938067, 1.0706651533643403, 1.0731227350234986, 0.35900605320930479">
 				<ormDiagram:Subject ref="_E5AFE1F6-57B9-4D72-A52E-B55B74F8926E" />
 			</ormDiagram:ObjectTypeShape>
 			<ormDiagram:ObjectTypeShape id="_366B9675-4D06-45F5-A434-70E46046EA94" IsExpanded="true" AbsoluteBounds="3.0833332538604736, 1.6145833730697632, 0.67991387367248535, 0.22950302660465241">
@@ -698,7 +843,7 @@
 				</ormDiagram:RelativeShapes>
 				<ormDiagram:Subject ref="_BCB14C7A-342C-45AA-8F10-A19130FAC8DD" />
 			</ormDiagram:FactTypeShape>
-			<ormDiagram:ObjectTypeShape id="_68F95B6B-7BFC-4386-89AB-27089F8211A7" IsExpanded="true" AbsoluteBounds="7.5625, 1.125, 1.6546521139144899, 0.22950302660465241">
+			<ormDiagram:ObjectTypeShape id="_68F95B6B-7BFC-4386-89AB-27089F8211A7" IsExpanded="true" AbsoluteBounds="7.5625, 1.0602484866976738, 1.6546521139144899, 0.35900605320930479">
 				<ormDiagram:Subject ref="_3EC0D882-9432-4183-A521-6BEABF6C2875" />
 			</ormDiagram:ObjectTypeShape>
 			<ormDiagram:ObjectTypeShape id="_E6604CA0-0839-4890-854D-5FF6A412BAD6" IsExpanded="true" AbsoluteBounds="9.6041669845581055, 1.9166666269302368, 0.86505388736724853, 0.22950302660465241">
