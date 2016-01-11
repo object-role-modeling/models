@@ -116,7 +116,7 @@
 				</orm:PlayedRoles>
 				<orm:ConceptualDataType id="_C54034C2-080F-48C9-B799-FD0C9E68B47A" ref="_204868AE-CB24-4334-8F62-0F8305830ACE" Scale="0" Length="0" />
 				<orm:ValueRestriction>
-					<orm:ValueConstraint id="_47056C61-FF99-4824-9914-F54F846078C9" Name="">
+					<orm:ValueConstraint id="_47056C61-FF99-4824-9914-F54F846078C9" Name="ValueTypeValueConstraint1">
 						<orm:ValueRanges>
 							<orm:ValueRange id="_022E4530-A0DB-4C95-9F3E-A243BD31FF77" MinValue="True" MaxValue="True" MinInclusion="NotSet" MaxInclusion="NotSet" />
 						</orm:ValueRanges>
@@ -129,7 +129,7 @@
 				</orm:PlayedRoles>
 				<orm:ConceptualDataType id="_E96C0889-8AFE-45B4-BCC2-C9EC4CAF1A9A" ref="_204868AE-CB24-4334-8F62-0F8305830ACE" Scale="0" Length="0" />
 				<orm:ValueRestriction>
-					<orm:ValueConstraint id="_F7F87CFB-DE0D-4EC0-8376-4CB32FEED43F" Name="">
+					<orm:ValueConstraint id="_F7F87CFB-DE0D-4EC0-8376-4CB32FEED43F" Name="ValueTypeValueConstraint2">
 						<orm:ValueRanges>
 							<orm:ValueRange id="_88C44CE2-CCB1-49D9-A4B6-5619F0D09240" MinValue="True" MaxValue="True" MinInclusion="NotSet" MaxInclusion="NotSet" />
 						</orm:ValueRanges>
@@ -978,12 +978,6 @@
 					<orm:Role id="_34F5B05C-B280-436F-B197-EF99E955DA20" ref="_767B917B-5DA1-4823-B11F-3F4AD45E4ACE" />
 				</orm:RoleSequence>
 			</orm:UniquenessConstraint>
-			<orm:UniquenessConstraint id="_25B6147D-9DA1-4B37-855C-AE2B101C4555" Name="ExternalUniquenessConstraint1">
-				<orm:RoleSequence>
-					<orm:Role id="_C874EBDF-F359-445E-A77E-A9121E2DFEE7" ref="_EC50EA14-EB74-445F-8A8E-C2C849E825B6" />
-					<orm:Role id="_ABBBF918-5C11-4863-8555-19FC93A10493" ref="_DD74732A-83E8-4F23-BFC9-E3BB77230771" />
-				</orm:RoleSequence>
-			</orm:UniquenessConstraint>
 			<orm:UniquenessConstraint id="_35298190-C607-4604-83DB-23A01CAC9B43" Name="InternalUniquenessConstraint9" IsInternal="true">
 				<orm:RoleSequence>
 					<orm:Role id="_35A6E767-81C7-40CB-8427-680645BF7AC1" ref="_8DA8947B-0300-4ACB-AEA3-E52007E0E57F" />
@@ -1237,11 +1231,6 @@
 			<orm:AutoCounterNumericDataType id="_4F7FA2F5-DF11-4E35-8C57-2F179518454D" />
 			<orm:TrueOrFalseLogicalDataType id="_204868AE-CB24-4334-8F62-0F8305830ACE" />
 		</orm:DataTypes>
-		<orm:ModelErrors>
-			<orm:JoinPathRequiredError id="_D6AE8E86-2CD7-44AC-B481-312E9C6CBD17" Name="Constraint 'ExternalUniquenessConstraint1' in model 'Web Service Definition' requires a join path.">
-				<orm:ConstraintRoleSequence ref="_25B6147D-9DA1-4B37-855C-AE2B101C4555" />
-			</orm:JoinPathRequiredError>
-		</orm:ModelErrors>
 		<orm:ReferenceModeKinds>
 			<orm:ReferenceModeKind id="_99747B80-2D4B-4595-AA5C-6A1ACFE4BA4C" FormatString="{1}" ReferenceModeType="General" />
 			<orm:ReferenceModeKind id="_B4AD3D2D-7AED-4943-AFCB-B01DDDD4E091" FormatString="{0}_{1}" ReferenceModeType="Popular" />
@@ -1275,9 +1264,6 @@
 				</ormDiagram:RelativeShapes>
 				<ormDiagram:Subject ref="_C96E18D8-F888-4CE5-A1F0-C8F1302842B0" />
 			</ormDiagram:FactTypeShape>
-			<ormDiagram:ExternalConstraintShape id="_C07C34B1-71C1-46F2-A8FD-DAD56E31776F" IsExpanded="true" AbsoluteBounds="2.7395834128061916, 2.791666666666667, 0.16, 0.16">
-				<ormDiagram:Subject ref="_25B6147D-9DA1-4B37-855C-AE2B101C4555" />
-			</ormDiagram:ExternalConstraintShape>
 			<ormDiagram:ObjectTypeShape id="_3A7B0B07-9DE0-4D64-8B14-D4E5EA75A09D" IsExpanded="true" AbsoluteBounds="3.5937499999999991, 2.6041666666666661, 0.48445383071899417, 0.2495030266046524">
 				<ormDiagram:Subject ref="_9229AA2B-7B00-4956-8434-C34A73C5C6CF" />
 			</ormDiagram:ObjectTypeShape>
