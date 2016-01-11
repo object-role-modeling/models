@@ -644,6 +644,14 @@
 				</orm:RoleSequence>
 				<orm:PreferredIdentifierFor ref="_C1722E7B-FD67-4F4E-BEA7-D41E1D015A5A" />
 			</orm:UniquenessConstraint>
+			<orm:MandatoryConstraint id="_00969C25-66FC-4022-8953-72182E768DB8" Name="ImpliedMandatoryConstraint9" IsImplied="true">
+				<orm:RoleSequence>
+					<orm:Role id="_179D2A41-E66B-45AE-B64A-8561D77700EB" ref="_90057BB3-E428-4A16-A6CD-B5540751D724" />
+					<orm:Role id="_2D63E9D8-5D0D-483D-AE4E-296266C72D77" ref="_689BF9B7-D592-4601-A5F5-14FC15B1CA08" />
+					<orm:Role id="_D390F445-FECB-470F-A0F1-151AD66268CB" ref="_3B2787BD-72F7-40AB-BF9C-AAC17DD69CE7" />
+				</orm:RoleSequence>
+				<orm:ImpliedByObjectType ref="_C1722E7B-FD67-4F4E-BEA7-D41E1D015A5A" />
+			</orm:MandatoryConstraint>
 		</orm:Constraints>
 		<orm:DataTypes>
 			<orm:VariableLengthTextDataType id="_6F2E5E3E-F089-42C0-BBE6-577D09F6C734" />
@@ -769,7 +777,7 @@ Enables hypermedia-driven clients to explore </orm:Text>
 					<ormDiagram:Role ref="_2B7C96B3-14D5-4FEE-A7B5-A10FE6F5063A" />
 				</ormDiagram:RoleDisplayOrder>
 			</ormDiagram:FactTypeShape>
-			<ormDiagram:ObjectTypeShape id="_8091D64D-738F-4890-809B-4D5254B9EA99" IsExpanded="true" AbsoluteBounds="5.2181316624208076, 3.94206167246867, 0.43367772817611694, 0.22950302660465241">
+			<ormDiagram:ObjectTypeShape id="_8091D64D-738F-4890-809B-4D5254B9EA99" IsExpanded="true" AbsoluteBounds="5.2181316624208076, 3.9255170026656261, 0.43367772817611694, 0.22950302660465241">
 				<ormDiagram:Subject ref="_D645C1AF-51E8-48A0-BE6F-7F4DB8F301F1" />
 			</ormDiagram:ObjectTypeShape>
 			<ormDiagram:FactTypeShape id="_557E938E-55A0-4FAA-91E6-BC55E3641248" IsExpanded="true" AbsoluteBounds="4.5467510751488529, 3.8833240714717672, 0.38388888899236917, 0.24388888899236916">
